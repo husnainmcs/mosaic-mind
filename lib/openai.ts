@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 const openai = new OpenAI({
 dangerouslyAllowBrowser: true ,
  apiKey:
-      process.env.OPENAI_API_KEY,
+      process.env.OPENAI_API_KEY || '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',
 });
 
 export async function generateAIPersonalityInsights(
