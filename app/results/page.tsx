@@ -293,9 +293,8 @@ function EnhancedRadialChart({scores}: {scores: any[]}) {
       const x = labelRadius * Math.cos(angle);
       const y = labelRadius * Math.sin(angle);
       
-      // Determine text anchor and alignment based on angle
-      let textAnchor = "middle";
-      let dominantBaseline = "middle";
+      // Determine text anchor based on angle - use proper TypeScript types
+      let textAnchor: "start" | "middle" | "end" = "middle";
       
       if (Math.abs(angle) < Math.PI/6 || Math.abs(angle) > 5*Math.PI/6) {
         textAnchor = "middle";
@@ -305,11 +304,8 @@ function EnhancedRadialChart({scores}: {scores: any[]}) {
         textAnchor = "end";
       }
 
-      if (angle > Math.PI/2 && angle < 3*Math.PI/2) {
-        dominantBaseline = "text-before-edge";
-      } else {
-        dominantBaseline = "text-after-edge";
-      }
+      // Use valid dominantBaseline values
+      const dominantBaseline: "auto" | "middle" | "central" = "middle";
 
       return (
        <text
