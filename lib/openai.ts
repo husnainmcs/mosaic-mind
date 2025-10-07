@@ -1,9 +1,8 @@
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-dangerouslyAllowBrowser: true ,
- apiKey:
-      process.env.OPENAI_API_KEY || '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',
+ dangerouslyAllowBrowser: true,
+ apiKey: process.env.NEXT_PUBLIC_APP_KEY,
 });
 
 export async function generateAIPersonalityInsights(
