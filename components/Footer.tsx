@@ -5,7 +5,7 @@ export default function Footer() {
     {/* Bottom Bar */}
     <div className="flex justify-center items-center">
      <p className="text-gray-300 text-sm">
-      © {new Date().getFullYear()} MosaicMind. All rights reserved.
+      © {new Date().getFullYear()} HIPAA compliant. All rights reserved.
      </p>
     </div>
    </div>

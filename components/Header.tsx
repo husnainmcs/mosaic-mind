@@ -9,8 +9,7 @@ export default function Header() {
      <div className="flex items-center">
       <h1 className="text-2xl font-bold text-gray-900">
        <Link href="/">
-        MosaicMind
-        {/* <span className="text-indigo-600">MosaicMind</span>Comprehensive */}
+        <span className="text-indigo-600">HIPAA</span>compliant
        </Link>
       </h1>
      </div>
