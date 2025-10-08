@@ -9,7 +9,7 @@ export default function Header() {
      <div className="flex items-center">
       <h1 className="text-2xl font-bold text-gray-900">
        <Link href="/">
-        <span className="text-indigo-600">HIPAA </span>compliant
+        <span className="text-indigo-600">HIPAA </span>Compliant
        </Link>
       </h1>
      </div>
